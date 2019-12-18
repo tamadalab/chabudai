@@ -21,7 +21,7 @@ public class VerbExtractor{
     }
 
     private CompilationUnit parse(Path path){
-        ASTParser parser = ASTParser.newParser(AST.JLS10);
+        ASTParser parser = ASTParser.newParser(AST.JLS12);
         parser.setSource(toCharArray(path));
         return (CompilationUnit) parser.createAST(new NullProgressMonitor());
     }

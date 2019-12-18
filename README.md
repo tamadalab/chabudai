@@ -11,7 +11,8 @@ JDTを使い，Javaのソースファイルを解析している．
 ```sh
 $ git clone git@github.com:tamadalab/chabudai.git
 $ cd chabudai
-$ gradle run -Pargs='<処理したいディレクトリ...>'
+$ mvn package # <- 初回実行時はちょっと時間がかかる．
+$ java -jar target/chabudai-1.0.0-SNAPSHOT.jar <処理したいディレクトリ>
 ```
 
 メモリの許す限り解析して出力する．
